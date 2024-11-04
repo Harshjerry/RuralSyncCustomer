@@ -1,0 +1,80 @@
+.service {
+    height: 38vh;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .service_thumbnail {
+    width: 100%;
+    flex: 1.5;
+    margin: 0;
+  }
+  
+  .service_image {
+    margin: 0;
+    height: 30vh;
+    width: 23vw;
+    border-radius: 2vh;
+  }
+  
+  .service_instructor {
+    margin: 0;
+    color: #d86b4c;
+  }
+  
+  .service_name {
+    margin: 0;
+    color: #303433;
+    font-size: 0.8rem;
+  }
+  
+  .service_info {
+    width: 80%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .service_info_cont1 {
+    margin-top: 1vh;
+    flex: 2.5;
+  }
+  
+  .service_info_cont2 {
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .service_info_cont2 h5 {
+    margin: 0;
+    font-weight: lighter;
+  }
+  
+  /* for mobile css */
+  
+  @media (max-width: 700px) {
+    .service {
+      flex: 1;
+      width: 96%;
+    }
+  
+    .service_thumbnail {
+      flex: 1.7;
+    }
+  
+    .service_image {
+      width: 90%;
+    }
+  
+    .service_info_cont2 {
+      margin-top: -2vh;
+    }
+  }
+  

@@ -1,0 +1,103 @@
+/* Ensure parent containers take up full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  /* Container styling */
+  .Front_cont {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  /* Background image styling */
+  .front_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(75%);
+  }
+  
+  /* Logo container styling */
+  .logo_cont {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 55;
+
+  }
+  
+  /* Front content styling */
+  .front_content {
+    width: 100%;
+    height: 100;
+    position: absolute;
+    top: 80%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 56;
+    color: white;
+    font-size: 2rem; 
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    h1{
+        font-weight: 200;
+        font-size: 6.5rem;
+        margin: 0;
+    }
+    display: flex;
+  }
+  
+
+  .content_left{
+    flex:1;
+    left:2%;
+    text-align: left;
+    h1{
+        padding-left: 2vw;
+    }
+    h4{
+        font-weight: 200;
+        margin: 0;
+        padding-left: 3vw;
+    }
+  }
+  .content_right{
+    flex:1;
+    right:5%;
+    text-align: right;
+    h1{
+        padding-right: 2vw;
+    }
+    h4{
+        font-weight: 200;
+        margin: 0;
+        padding-right: 3vw;
+    }
+  }
+
+  .needs {
+    display: block; 
+    margin-top: -0.2em; 
+  }
+  
+
+  @media (max-width: 768px) {
+
+.front_content{
+  display: none;
+}
+
+.logoimg{
+  height: 45vh;
+  width: 100vw;
+}
+
+  }
